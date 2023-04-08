@@ -16,3 +16,9 @@
     flex-wrap: wrap;
     margin-bottom: 5rem;
 }
+
+@media screen and (max-width:640px)  {
+    .education__cards h2{
+        font-size: 3rem;
+    }
+}
