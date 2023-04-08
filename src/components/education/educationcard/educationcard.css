@@ -1,0 +1,39 @@
+.cards__content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.education_card{
+    background-color: #1a1919;
+    box-shadow: 0 0.5rem 2.5rem rgba(1 1 1 /15%);
+    border-radius: 0.1rem;
+    padding: 2.5rem;
+    margin: 1.5rem;
+    transition: 0.7s ease;
+    width: 25em;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.education_card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+.info h2{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0.1rem;
+}
