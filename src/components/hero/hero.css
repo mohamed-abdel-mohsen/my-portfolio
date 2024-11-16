@@ -1,10 +1,10 @@
-.mask{
+.mask {
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-.hero__img{
+.hero__img {
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -13,7 +13,7 @@
 }
 
 .mask::after {
-    content: "";
+    content: '';
     width: 100%;
     height: 100vh;
     background-color: black;
@@ -28,14 +28,14 @@
     width: 100%;
 }
 
-.hero .content{
+.hero .content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
-.her--btn{
+.her--btn {
     margin-top: 5rem;
 }
 .hero .content h3 {
@@ -46,19 +46,18 @@
 }
 .hero .content h1 {
     letter-spacing: 1rem;
-    padding: 2.5rem 0 ;
+    padding: 2.5rem 0;
     font-size: 5rem;
     font-weight: 800;
     text-transform: uppercase;
 }
 
-
-@media screen and (max-width:640px)  {
-    .her--btn{
+@media screen and (max-width: 640px) {
+    .her--btn {
         margin-top: 5rem;
         display: flex;
     }
-    .hero .content{
+    .hero .content {
         margin-top: 6rem;
     }
 }

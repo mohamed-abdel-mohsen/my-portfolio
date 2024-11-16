@@ -1,41 +1,36 @@
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
-  font-family: 'Roboto Condensed', sans-serif;
-  color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
 }
 
-html{
-  font-size: 62.5%;
-  background-color: black;
+html {
+    font-size: 62.5%;
+    background-color: black;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
-.btn{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  color: black;
-  background-color: white;
-  text-decoration: none;
-  padding: 1.5rem 7rem;
-  margin: 1.5rem;
-  border-radius: 5rem;
-  font-size: 1.7rem;
-  font-weight: 700;
+.btn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 1.5rem 7rem;
+    margin: 1.5rem;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    font-weight: 700;
 }
 
-@media screen and (max-width:640px)  {
-  .btn{
-    margin-bottom: 10rem;
-    padding: 1.5rem 4.5rem;
-  }
+@media screen and (max-width: 640px) {
+    .btn {
+        padding: 1.5rem 4.5rem;
+    }
 }
-
-
-
-

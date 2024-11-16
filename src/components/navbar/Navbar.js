@@ -1,40 +1,28 @@
-import React , {useState} from "react";
-import "./navbar.css";
-import { Link } from "react-router-dom";
-import {FaBars, FaTimes} from "react-icons/fa"
+import React, { useState } from 'react';
+import './navbar.css';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { menuLinks } from '../../constant/Constant';
 
 const Navbar = () => {
+    const [click, setClick] = useState(false);
 
-    const [click , setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-
-    return(
+    return (
         <div className="header">
-            <Link to="/" className="main__logo"> 
+            <Link to="/" className="main__logo">
                 <h1>Portfolio</h1>
             </Link>
-            <ul className={click ? "nav__menu active" : "nav__menu"}>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/About">About</Link>
-                </li>
-                <li>
-                    <Link to="/Project">Project</Link>
-                </li>
-                <li>
-                    <Link to="/Contact">Contact</Link>
-                </li>
+            <ul className={click ? 'nav__menu active' : 'nav__menu'}>
+                {menuLinks.map(({ url, name }, index) => (
+                    <li key={index}>
+                        <Link to={url}>{name}</Link>
+                    </li>
+                ))}
             </ul>
-            <div className="hamburger" onClick={handleClick}>
-                {click? (<FaTimes size={20} style={{color:"#fff"}}/>) : (<FaBars size={20} style={{color:"#fff"}}/>)}
-                
-                 
+            <div className="hamburger" onClick={() => setClick(!click)}>
+                {click ? <FaTimes size={20} style={{ color: '#fff' }} /> : <FaBars size={20} style={{ color: '#fff' }} />}
             </div>
-
         </div>
-
     );
 };
 
