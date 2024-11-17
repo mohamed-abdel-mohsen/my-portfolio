@@ -1,4 +1,21 @@
-import { FaHome, FaMobile, FaMailBulk, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import {
+    FaHome,
+    FaMobile,
+    FaMailBulk,
+    FaLinkedin,
+    FaGithub,
+    FaTwitter,
+    FaNodeJs,
+    FaSass,
+    FaBootstrap,
+    FaCss3Alt,
+    FaReact,
+    FaDatabase,
+    FaAws,
+    FaDocker,
+} from 'react-icons/fa';
+import { SiJavascript, SiTypescript, SiTailwindcss, SiHtml5, SiJasmine, SiExpress } from 'react-icons/si';
+
 import pro1 from '../img/Edge-Pro.png';
 import pro2 from '../img/discover.png';
 import pro3 from '../img/doctor_web.png';
@@ -10,6 +27,7 @@ import udacity from '../img/Udacity_logo.png';
 import aws from '../img/AWS-logo.jpg';
 import iti from '../img/iti.jpg';
 import meta from '../img/meta.png';
+
 export const menuLinks = [
     { url: '/', name: 'Home' },
     { url: '/About', name: 'About' },
@@ -125,5 +143,64 @@ export const educationInfo = [
         img: aws,
         title: 'Certificate of Introduction to AWS Elastic Beanstalk',
         width: '250px',
+    },
+];
+
+export const skillsDetails = [
+    {
+        icon: <SiHtml5 size={30} style={{ color: 'black' }} />,
+        info: 'HTML5',
+    },
+    {
+        icon: <FaCss3Alt size={30} style={{ color: 'black' }} />,
+        info: 'CSS3',
+    },
+    {
+        icon: <FaSass size={30} style={{ color: 'black' }} />,
+        info: 'Sass',
+    },
+    {
+        icon: <FaBootstrap size={30} style={{ color: 'black' }} />,
+        info: 'BootStrap',
+    },
+    {
+        icon: <SiTailwindcss size={30} style={{ color: 'black' }} />,
+        info: 'TailWind',
+    },
+    {
+        icon: <SiJavascript size={30} style={{ color: 'black' }} />,
+        info: 'JavaScript',
+    },
+    {
+        icon: <SiTypescript size={30} style={{ color: 'black' }} />,
+        info: 'TypeScript',
+    },
+    {
+        icon: <FaReact size={30} style={{ color: 'black' }} />,
+        info: 'React.js',
+    },
+    {
+        icon: <FaNodeJs size={30} style={{ color: 'black' }} />,
+        info: 'NodeJs',
+    },
+    {
+        icon: <SiExpress size={30} style={{ color: 'black' }} />,
+        info: 'Express',
+    },
+    {
+        icon: <SiJasmine size={30} style={{ color: 'black' }} />,
+        info: 'Jasmine(TDD,INTEGRATION)',
+    },
+    {
+        icon: <FaDatabase size={30} style={{ color: 'black' }} />,
+        info: 'DataBase (SQL , NoSQL)',
+    },
+    {
+        icon: <FaAws size={30} style={{ color: 'black' }} />,
+        info: 'Amazon Web Service',
+    },
+    {
+        icon: <FaDocker size={30} style={{ color: 'black' }} />,
+        info: 'Docker',
     },
 ];
