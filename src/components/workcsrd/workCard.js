@@ -3,18 +3,15 @@ import { NavLink } from 'react-router-dom';
 
 import './workcard.css';
 
-const WorkCard = (props) => {
+const WorkCard = ({ imgsrc, title, text, view }) => {
     return (
         <div className="project-card">
-            <img src={props.imgsrc} alt="img" />
-            <h2 className="project-title">{props.title}</h2>
+            <img src={imgsrc} alt="img" />
+            <h2 className="project-title">{title}</h2>
             <div className="pro-details">
-                <p> {props.text} </p>
+                <p> {text} </p>
                 <div className="pro-btns">
-                    <NavLink to="url.com" className="btn">
-                        Veiw
-                    </NavLink>
-                    <NavLink to="url.com" className="btn">
+                    <NavLink to={view} className="btn" target="_blank">
                         Source
                     </NavLink>
                 </div>
