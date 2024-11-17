@@ -73,11 +73,12 @@ p {
     }
     .right p {
         letter-spacing: 2px;
-        text-align: center;
+        text-align: start;
+        padding: 1.5rem;
     }
     .left {
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        margin: auto;
     }
 }
