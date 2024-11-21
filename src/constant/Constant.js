@@ -13,6 +13,7 @@ import {
     FaDatabase,
     FaAws,
     FaDocker,
+    FaUser,
 } from 'react-icons/fa';
 import { SiJavascript, SiTypescript, SiTailwindcss, SiHtml5, SiJasmine, SiExpress } from 'react-icons/si';
 
@@ -22,6 +23,8 @@ import pro3 from '../img/doctor_web.png';
 import pro4 from '../img/resize-image.png';
 import pro5 from '../img/ecommerce.webp';
 import pro6 from '../img/hosting.jpeg';
+import pro7 from '../img/Capture.PNG';
+import pro8 from '../img/weather.webp';
 import uos from '../img/university-of-sharjah_592560cf2aeae70239af5471_large.jpg';
 import udacity from '../img/Udacity_logo.png';
 import aws from '../img/AWS-logo.jpg';
@@ -39,7 +42,7 @@ export const ProjectCardData = [
     {
         imgsrc: pro1,
         title: 'Edge-Pro for information systems',
-        text: 'Working in full-time as a web developer for one year and three months in the company ',
+        text: 'Working in full-time as a web developer for one year and three months in the company 2021 - 2022 ',
         view: 'https://edge-pro.com/',
     },
     {
@@ -73,11 +76,28 @@ export const ProjectCardData = [
         text: 'The project aims to give a real-world scenario in which you would read and write to your disk via a Node.js express server rather than a database.',
         view: 'https://github.com/mohamed-abdel-mohsen/udacity--API-for-Image-Processing',
     },
+    {
+        imgsrc: pro7,
+        title: 'Dynamic Landing Page',
+        text: 'This project involves converting a static web page into a dynamic and interactive landing page. The primary goal is to enhance user engagement by enabling interactivity, which is achieved through the use of JavaScript. By integrating dynamic elements.',
+        view: 'https://github.com/mohamed-abdel-mohsen/landing-page',
+    },
+    {
+        imgsrc: pro8,
+        title: 'Weather Journal Application',
+        text: 'This project is a dynamic weather journal application that interacts with the OpenWeatherMap API to fetch weather data based on user input (ZIP code). The application allows users to record their feelings and logs the data, including the current date and weather temperature',
+        view: 'https://github.com/mohamed-abdel-mohsen/Weather-Journal-application',
+    },
 ];
 
 const leftContainerInfoStyle = { color: '#fff', marginRight: '2rem' };
 
 export const leftContainerInfo = [
+    {
+        icon: <FaUser size={27} style={leftContainerInfoStyle} />, // Person icon added
+        info: 'Mohamed Abdel - Mohsen',
+        className: 'name cc',
+    },
     {
         icon: <FaHome size={27} style={leftContainerInfoStyle} />,
         info: 'Cairo, EGYPT / Dubai, UAE',
@@ -90,14 +110,14 @@ export const leftContainerInfo = [
     },
     {
         icon: <FaMailBulk size={27} style={leftContainerInfoStyle} />,
-        info: 'info.mohamedmohsen@gmail.com',
+        info: 'moh.mohsen8074@gmail.com',
         className: 'email cc',
     },
 ];
 
 export const rightContainerInfo = [
     {
-        link: 'https://www.linkedin.com/in/mohamed-abdel-mohsen/',
+        link: 'https://www.linkedin.com/',
         icon: <FaLinkedin size={35} style={{ marginLeft: '1.75rem' }} />,
     },
     {
